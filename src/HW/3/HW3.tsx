@@ -38,7 +38,7 @@ export const HW3 = () => {
 
             <input id={'hw03-input'} type="text" value={currentText} onChange={event => handleChange(event)} />
 
-            <button id={'hw03-button'} onClick={handleSave}> // НЕ ХВАТАТЕТ ФУНКЦИИ
+            <button id={'hw03-button'} onClick={handleSave}>
                 Сохранить
             </button>
 

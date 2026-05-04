@@ -7,6 +7,18 @@
   pointer-events: none;
 }
 
+.list-wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 100px;
+}
+
+.tasks-wrapper{
+  display: flex;
+  gap: 20px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
