@@ -1,4 +1,4 @@
-import { useState, type ChangeEvent, type SyntheticEvent } from 'react';
+import { useState, type ChangeEvent } from 'react';
 
 export const HW3 = () => {
     // 1️⃣ Раскомментируйте JSX(HW3.tsx) и вы увидите,
