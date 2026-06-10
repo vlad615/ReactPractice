@@ -5,7 +5,7 @@ import { useState } from "react";
 import { HW2 } from './HW/2/HW2';
 import { HW3 } from './HW/3/HW3';
 import { Counter } from "./components/Counter";
-// import { HW4 } from './HW/4/HW4';
+import { HW4 } from './HW/4/HW4';
 
 
 let tasks: ListProps[] = [
@@ -55,7 +55,8 @@ export function App() {
           </div>
 
           <HW3 />
-          {/* <HW4 /> */}
+          <h2>HW4</h2>
+          <HW4 />
         </section>
       </div>
       <div className="container">
