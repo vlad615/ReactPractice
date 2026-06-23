@@ -12,7 +12,7 @@ import './styles/App.css';
 const task1 = crypto.randomUUID()
 const task2 = crypto.randomUUID()
 
-let toDoLists: ListType[] = [
+const toDoLists: ListType[] = [
     {
         id: task1,
         title: "Programing",
@@ -25,7 +25,7 @@ let toDoLists: ListType[] = [
     },
 ]
 
-let tasks: TasksType =
+const tasks: TasksType =
 {
     [task1]: [
         { id: crypto.randomUUID(), title: 'HTML&CSS', isDone: true },
