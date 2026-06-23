@@ -7,6 +7,6 @@ type Props = {
 
 export function Button({name, callBack}: Props){
     return(
-        <button onClick={callBack}>{name}</button>
+        <button type="button" onClick={callBack}>{name}</button>
     )
 }
