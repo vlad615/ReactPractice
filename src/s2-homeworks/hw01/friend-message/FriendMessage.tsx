@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import s from './FriendMessage.module.css'
 import type { MessagePropsType } from '../message/Message'
 

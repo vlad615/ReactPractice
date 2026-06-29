@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import s from './Message.module.css'
 import type { MessageType } from '../HW1'
 

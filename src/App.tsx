@@ -1,6 +1,6 @@
 import type { ListType } from "./layout/todoList/components/content/CardList";
 import { ToDoLists, type TasksType } from "./layout/todoList/ToDoLists"
-import s from "./styles/App.module.css";
+// import s from "./styles/App.module.css";
 
 import { HW1 } from './s2-homeworks/hw01/HW1'
 
