@@ -1,7 +1,7 @@
 // import React from 'react'
 import Message from './message/Message'
 import MessageSender from './message-sender/MessageSender'
-import s2 from '../../styles/App.module.css'
+import s2 from '../../App.module.css'
 import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
 
@@ -56,19 +56,22 @@ export const friendMessage0: MessageType = {
 
 export const HW1 = () => {
     return (
-        <div id={'hw1'} className='container'>
-            <div className={s2.hwTitle}>Homework #1</div>
-            <div className={s2.hw}>
-                {/*проверка отображения (не менять)*/}
-                <div>
-                    <Message message={message0} />
-                    <FriendMessage message={friendMessage0} />
-                </div>
+        <section>
+            <div id={'hw1'} className='container'>
+                <div className={s2.hwTitle}>Homework #1</div>
+                <div className={s2.hw}>
+                    {/*проверка отображения (не менять)*/}
+                    <div>
+                        <Message message={message0} />
+                        <FriendMessage message={friendMessage0} />
+                    </div>
 
-                {/*для автоматической проверки дз (не менять)*/}
-                <MessageSender M={Message} />
+                    {/*для автоматической проверки дз (не менять)*/}
+                    <MessageSender M={Message} />
+                </div>
             </div>
-        </div>
+        </section>
+
     )
 }
 
