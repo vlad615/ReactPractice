@@ -4,8 +4,9 @@
 }
 
 .textarea {
+    max-height: 100px;
     border: unset;
-    padding: 5px 25px;
+    padding: 10px 25px;
     border-radius: 20px;
     resize: unset;
     flex-grow: 1;
@@ -14,12 +15,9 @@
 }
 
 .textarea::placeholder {
-    font: 400 14px "Montserrat", sans-serif;
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.6);
     opacity: 0.9;
-    padding: 0;
-    margin: 0;
-    text-align: bottom;
 }
 
 .button {

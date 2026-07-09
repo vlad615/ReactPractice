@@ -1,13 +1,13 @@
-import React, {type ChangeEvent, type KeyboardEvent} from 'react'
+import React, { type ChangeEvent, type KeyboardEvent } from 'react'
 import s from './Greeting.module.css'
 import type { UserType } from './HW3'
 
 type GreetingPropsType = {
     name: UserType["name"] // need to fix any
-    setNameCallback: (e: ChangeEvent<HTMLInputElement>)=>void // need to fix any
-    addUser: ()=>void // need to fix any
+    setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void // need to fix any
+    addUser: () => void // need to fix any
     onBlur: () => void // need to fix any
-    onEnter: (e: KeyboardEvent)=>void // need to fix any
+    onEnter: (e: KeyboardEvent) => void // need to fix any
     error: string // need to fix any
     totalUsers: number // need to fix any
     lastUserName?: string // need to fix any
@@ -26,32 +26,26 @@ const Greeting: React.FC<GreetingPropsType> = (
         lastUserName,
     } // деструктуризация пропсов
 ) => {
-    const inputClass = error.length? s.errorInput : ""// need to fix with (?:)
+    const inputClass = s.input + (error.length ? " " + s.errorInput : "")// need to fix with (?:)
     
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
-            <div className={s.text}>
+            <p className={s.text}>
                 {'Людей добавили: '}
                 <span id={'hw3-users-total'}>
                     {totalUsers}
                 </span>
-            </div>
+            </p>
 
             <div className={s.inputAndButtonContainer}>
-                <div>
-                    <input
-                        id={'hw3-input'}
-                        value={name}
-                        onChange={setNameCallback}
-                        className={inputClass}
-                        onKeyDown={onEnter}
-                        onBlur={onBlur}
-                    />
-                    <div id={'hw3-error'} className={s.error}>
-                        {error}
-                    </div>
-                </div>
-
+                <input
+                    id={'hw3-input'}
+                    value={name}
+                    onChange={setNameCallback}
+                    className={inputClass}
+                    onKeyDown={onEnter}
+                    onBlur={onBlur}
+                />
                 <button
                     id={'hw3-button'}
                     onClick={addUser}
@@ -60,12 +54,15 @@ const Greeting: React.FC<GreetingPropsType> = (
                 >
                     add
                 </button>
+                <p id={'hw3-error'} className={s.error}>
+                    {error}
+                </p>
             </div>
 
             {lastUserName && (
-                <div className={s.greeting}>
+                <p className={s.greeting}>
                     Привет <span id={'hw3-last-user'}>{lastUserName}</span>!
-                </div>
+                </p>
             )}
         </div>
     )
