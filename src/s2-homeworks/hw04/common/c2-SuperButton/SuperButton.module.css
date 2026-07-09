@@ -6,10 +6,6 @@
     height: 30px;
     font-weight: 600;
     font-size: 14px;
-    color: #fff;
-    background: #06c;
-
-
 }
 
 .red {
@@ -29,7 +25,8 @@
 }
 
 .default {
-
+    color: #fff;
+    background: #06c;
 }
 
 .button:hover {
