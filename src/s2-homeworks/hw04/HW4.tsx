@@ -11,7 +11,7 @@ import Stand from './Stand'
 export const HW4 = () => {
     return (
         <section>
-            <div id={'hw4'}>
+            <div id={'hw4'} className='container'>
                 <div className={s2.hwTitle}>Homework #4</div>
                 {/*демонстрация возможностей компонент:*/}
                 <div className={s2.hw}>

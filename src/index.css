@@ -13,14 +13,9 @@ body {
 }
 
 .container {
-  max-width: 1460px;
-  margin: 0 auto;
-}
-
-section {
-  overflow: hidden;
+  max-width: 1140px;
   padding: 0 15px;
-  margin-bottom: 35px;
+  margin: 0 auto;
 }
 
 code {
@@ -28,7 +23,7 @@ code {
     monospace;
 }
 
-button{
+button, a{
     cursor: pointer;
 }
 
