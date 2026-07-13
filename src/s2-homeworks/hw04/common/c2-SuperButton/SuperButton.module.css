@@ -8,6 +8,11 @@
     font-size: 14px;
 }
 
+.default {
+    color: #fff;
+    background: #06c;
+}
+
 .red {
     background: #cc1439;
 }
@@ -24,10 +29,7 @@
     color: #06c;
 }
 
-.default {
-    color: #fff;
-    background: #06c;
-}
+
 
 .button:hover {
     border: 3px solid #002e5c
