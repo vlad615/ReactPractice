@@ -1,4 +1,4 @@
-import React, { type FC } from 'react'
+import { type FC } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import s from './Sidebar.module.css'
 import { PATH } from '../Pages'
