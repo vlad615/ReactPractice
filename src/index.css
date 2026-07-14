@@ -12,6 +12,11 @@ body {
   min-width: 360px;
 }
 
+section {
+  overflow: hidden;
+
+}
+
 .container {
   max-width: 1140px;
   padding: 0 15px;
@@ -23,8 +28,9 @@ code {
     monospace;
 }
 
-button, a{
-    cursor: pointer;
+button,
+a {
+  cursor: pointer;
 }
 
 ul,
