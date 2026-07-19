@@ -1,5 +1,5 @@
 .button {
-    border: 3px solid transparent;
+    border: 1px solid transparent;
     border-radius: 3px;
     padding: 0 24px;
     width: 132px;
@@ -24,7 +24,7 @@
 }
 
 .secondary {
-    border: 3px solid #06c;
+    border: 1px solid #06c;
     background-color: #fff;
     color: #06c;
 }
@@ -32,13 +32,18 @@
 
 
 .button:hover {
-    border: 3px solid #002e5c
+    border-color: #06c;
+    color: #06c;
+    background: #fff;
 }
 
 .red:hover {}
 
 
-.secondary:hover {}
+.secondary:hover {
+    color: #fff;
+    background: #06c;
+}
 
 
 .default:active {}
