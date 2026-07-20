@@ -1,6 +1,6 @@
 import { createAction, createReducer, } from "@reduxjs/toolkit"
 
-type Counter = number
+export type Counter = number
 const initialState: Counter = 0
 
 export const addToAC = createAction<{ num: Counter }>('counter/addTo')
@@ -14,7 +14,7 @@ export const counterReducer = createReducer(initialState, (builder) => {
                 state += action.payload.num
             }
         })
-        .addCase(resetCounterAC, (state)=>{
+        .addCase(resetCounterAC, (state) => {
             state = 0
         })
 })
