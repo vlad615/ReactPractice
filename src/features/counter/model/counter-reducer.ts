@@ -9,12 +9,6 @@ export const resetCounterAC = createAction('counter/resetCounter')
 
 export const counterReducer = createReducer(initialState, (builder) => {
     builder
-        .addCase(addToAC, (state, action) => {
-            if (state + action.payload.num <= 15) {
-                state += action.payload.num
-            }
-        })
-        .addCase(resetCounterAC, (state) => {
-            state = 0
-        })
+        .addCase(addToAC, (state, action) => state += action.payload.num)
+        .addCase(resetCounterAC, () => 0)
 })

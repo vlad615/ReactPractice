@@ -9,9 +9,11 @@ export const Counter = () => {
     const dispatch = useAppDispatch()
 
     function addValue(num: number) {
-        dispatch(addToAC({ num }))
+        if (counter + num <= 15) {
+            dispatch(addToAC({ num }))
+        }
     }
-    
+
     return (
         <section>
             <div className="container">
