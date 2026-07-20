@@ -1,0 +1,50 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.counterWrapper {
+    border: 2px solid #00BCD4;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #0f1927;
+}
+
+.numberWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #00BCD4;
+    border-radius: 8px;
+    font-size: 60px;
+    color: #00BCD4;
+    margin-bottom: 20px;
+    min-height: 150px;
+    background-color: #0f1927;
+}
+
+.btnWrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.btnWrapper button {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    background-color: #00BCD4;
+    color: #1a1a1a;
+    transition: background-color 0.3s;
+}
+
+.btnWrapper button:hover {
+    background-color: #00ACC1;
+}
+
+.btnWrapper button:active {
+    background-color: #0097A7;
+}

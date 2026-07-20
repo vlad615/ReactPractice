@@ -28,6 +28,10 @@ code {
     monospace;
 }
 
+button{
+  border: none;
+}
+
 button,
 a {
   cursor: pointer;

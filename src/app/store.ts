@@ -14,4 +14,3 @@ export type AppDispatch = typeof store.dispatch
 
 (window as any).store = store;
 
-
