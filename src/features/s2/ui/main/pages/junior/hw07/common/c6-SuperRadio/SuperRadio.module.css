@@ -1,0 +1,52 @@
+.radio {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid #000;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.radio:hover {
+    border-color: #00BCD4;
+    box-shadow: 0 0 8px rgba(0, 188, 212, 0.3);
+}
+
+.radio:checked {
+    border-color: #00BCD4;
+}
+
+.radio:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #00BCD4;
+    border-radius: 50%;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.span {
+    font: 400 14px/1.5 'Montserrat', sans-serif;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
