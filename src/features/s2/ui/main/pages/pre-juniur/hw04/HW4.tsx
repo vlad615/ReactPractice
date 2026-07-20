@@ -1,0 +1,25 @@
+import s2 from '@/app/App.module.css'
+import Stand from './Stand'
+
+/*
+* 1 - понять (и простить) SuperInputText
+* 2 - в зависимости от типа и дизэйбла прицепить нужный класс в SuperButton.tsx (строка 21)
+* 3 - дописать onChangeCallback в SuperCheckbox.tsx чтоб оба чекбокса работали на стенде
+* 4 - сделать стили в соответствии с дизайном
+* */
+
+export const HW4 = () => {
+    return (
+        <section>
+            <div id={'hw4'} className='container'>
+                <div className={s2.hwTitle}>Homework #4</div>
+                {/*демонстрация возможностей компонент:*/}
+                <div className={s2.hw}>
+                    <Stand />
+                </div>
+            </div>
+        </section>
+
+    )
+}
+
