@@ -1,6 +1,6 @@
-import React from 'react'
+import { beforeEach, expect, test } from 'vitest'
+import { type UserType } from '../../HW8'
 import { homeWorkReducer } from '../homeWorkReducer'
-import { UserType } from '../../HW8'
 
 let initialState: UserType[]
 
