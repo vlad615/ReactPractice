@@ -29,15 +29,14 @@
     color: #06c;
 }
 
+.button:hover {
+}
 
+.red:hover {
+}
 
-.button:hover {}
-
-.red:hover {}
-
-
-.secondary:hover {}
-
+.secondary:hover {
+}
 
 .default:active {
     border-color: #06c;
@@ -55,4 +54,5 @@
     color: #cc1439;
 }
 
-.button:disabled {}
+.button:disabled {
+}

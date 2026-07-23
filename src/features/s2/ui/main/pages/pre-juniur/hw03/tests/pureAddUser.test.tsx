@@ -1,5 +1,5 @@
 import { expect, test, beforeEach } from 'vitest'
-import {pureAddUser} from '../GreetingContainer'
+import { pureAddUser } from '../GreetingContainer'
 
 let name: any
 const setName = (a: any) => {

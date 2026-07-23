@@ -1,6 +1,6 @@
 .sidebar {
     transform: translateX(-1000%);
-    transition: transform .5s ease;
+    transition: transform 0.5s ease;
     z-index: 99;
     position: fixed;
     background-color: #fff;
@@ -11,7 +11,7 @@
 }
 
 .sidebar::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     bottom: 0;
@@ -70,5 +70,5 @@
 
 .close img {
     position: absolute;
-    left: 200px
+    left: 200px;
 }

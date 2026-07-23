@@ -10,23 +10,18 @@ type PropsType = {
 }
 
 export const Sidebar: FC<PropsType> = ({ open, handleClose }) => {
-    const sidebarClass = s.sidebar
-        + (open ? ' ' + s.open : '')
+    const sidebarClass = s.sidebar + (open ? ' ' + s.open : '')
 
     const location = useLocation()
     const currentPath = location.pathname
     return (
-        <div className='container'>
+        <div className="container">
             {/*затемнение справа от открытого меню*/}
             {open && <div className={s.background} onClick={handleClose} />}
 
             <aside className={sidebarClass}>
                 <button className={s.close} onClick={handleClose}>
-                    <img
-                        src={closeIcon}
-                        alt="close sidebar"
-                        id={'hw5-menu-close'}
-                    />
+                    <img src={closeIcon} alt="close sidebar" id={'hw5-menu-close'} />
                 </button>
 
                 <nav id={'hw5-menu'} className={s.nav}>
@@ -42,16 +37,14 @@ export const Sidebar: FC<PropsType> = ({ open, handleClose }) => {
                         id={'hw5-junior-link'}
                         to={PATH.JUNIOR}
                         onClick={handleClose}
-                        className={currentPath === PATH.JUNIOR ? s.active : ''}
-                    >
+                        className={currentPath === PATH.JUNIOR ? s.active : ''}>
                         Junior
                     </NavLink>
                     <NavLink
                         id={'hw5-junior-plus-link'}
                         to={PATH.JUNIOR_PLUS}
                         onClick={handleClose}
-                        className={currentPath === PATH.JUNIOR_PLUS ? s.active : ''}
-                    >
+                        className={currentPath === PATH.JUNIOR_PLUS ? s.active : ''}>
                         Junior Plus
                     </NavLink>
                 </nav>

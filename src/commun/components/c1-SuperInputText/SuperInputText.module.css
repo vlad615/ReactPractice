@@ -15,11 +15,14 @@
     flex-direction: column;
 }
 
-.superInput {}
+.superInput {
+}
 
-.errorInput {}
+.errorInput {
+}
 
-.errorInput:focus {}
+.errorInput:focus {
+}
 
 .error {
     font-weight: 400;

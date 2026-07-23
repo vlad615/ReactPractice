@@ -5,11 +5,11 @@ import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 import s from './HW7.module.css'
 
 /*
-* 1 - в файле SuperSelect.tsx дописать логику функции onChangeCallback
-* 2 - в файле SuperRadio.tsx дописать логику функции onChangeCallback
-* 3 - в файле SuperRadio.tsx дописать name, checked, value (узнать для чего в радио name)
-* 4 - сделать стили в соответствии с дизайном
-* */
+ * 1 - в файле SuperSelect.tsx дописать логику функции onChangeCallback
+ * 2 - в файле SuperRadio.tsx дописать логику функции onChangeCallback
+ * 3 - в файле SuperRadio.tsx дописать name, checked, value (узнать для чего в радио name)
+ * 4 - сделать стили в соответствии с дизайном
+ * */
 
 const arr = [
     { id: 1, value: 'React' },
@@ -28,24 +28,23 @@ const HW7 = () => {
                 {/*демонстрация возможностей компонент:*/}
                 <div className={s2.hw}>
                     <div className={s.container}>
-                            <SuperSelect
-                                id={'hw7-super-select'}
-                                options={arr}
-                                value={value}
-                                onChangeOption={onChangeOption}
-                            />
-                            <SuperRadio
-                                id={'hw7-super-radio'}
-                                name={'hw7-radio'}
-                                options={arr}
-                                value={value}
-                                onChangeOption={onChangeOption}
-                            />
+                        <SuperSelect
+                            id={'hw7-super-select'}
+                            options={arr}
+                            value={value}
+                            onChangeOption={onChangeOption}
+                        />
+                        <SuperRadio
+                            id={'hw7-super-radio'}
+                            name={'hw7-radio'}
+                            options={arr}
+                            value={value}
+                            onChangeOption={onChangeOption}
+                        />
                     </div>
                 </div>
             </div>
         </section>
-
     )
 }
 

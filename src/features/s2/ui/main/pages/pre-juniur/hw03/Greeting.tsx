@@ -3,7 +3,7 @@ import s from './Greeting.module.css'
 import type { UserType } from './HW3'
 
 type GreetingPropsType = {
-    name: UserType["name"] // need to fix any
+    name: UserType['name'] // need to fix any
     setNameCallback: (e: ChangeEvent<HTMLInputElement>) => void // need to fix any
     addUser: () => void // need to fix any
     onBlur: () => void // need to fix any
@@ -15,26 +15,15 @@ type GreetingPropsType = {
 
 // презентационная компонента (для верстальщика)
 const Greeting: React.FC<GreetingPropsType> = (
-    {
-        name,
-        setNameCallback,
-        addUser,
-        onEnter,
-        onBlur,
-        error,
-        totalUsers,
-        lastUserName,
-    } // деструктуризация пропсов
+    { name, setNameCallback, addUser, onEnter, onBlur, error, totalUsers, lastUserName }, // деструктуризация пропсов
 ) => {
-    const inputClass = s.input + (error.length ? " " + s.errorInput : "")// need to fix with (?:)
-    
+    const inputClass = s.input + (error.length ? ' ' + s.errorInput : '') // need to fix with (?:)
+
     return (
         <div id={'hw3-form'} className={s.greetingForm}>
             <p className={s.text}>
                 {'Людей добавили: '}
-                <span id={'hw3-users-total'}>
-                    {totalUsers}
-                </span>
+                <span id={'hw3-users-total'}>{totalUsers}</span>
             </p>
 
             <div className={s.inputAndButtonContainer}>
@@ -46,12 +35,7 @@ const Greeting: React.FC<GreetingPropsType> = (
                     onKeyDown={onEnter}
                     onBlur={onBlur}
                 />
-                <button
-                    id={'hw3-button'}
-                    onClick={addUser}
-                    className={s.button}
-                    disabled={!name.trim()}
-                >
+                <button id={'hw3-button'} onClick={addUser} className={s.button} disabled={!name.trim()}>
                     add
                 </button>
                 <p id={'hw3-error'} className={s.error}>

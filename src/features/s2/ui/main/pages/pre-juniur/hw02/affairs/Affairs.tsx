@@ -4,25 +4,23 @@ import s from './Affairs.module.css'
 
 type AffairsPropsType = {
     data: AffairType[] // need to fix any
-    setFilter: (filter: FilterType) => void;
-    deleteAffairCallback: (_id: AffairType["_id"]) => void;
+    setFilter: (filter: FilterType) => void
+    deleteAffairCallback: (_id: AffairType['_id']) => void
     filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
     const setAll = () => {
-        props.setFilter("all")
+        props.setFilter('all')
     }
     const setHigh = () => {
-        props.setFilter("high")
+        props.setFilter('high')
     }
     const setMiddle = () => {
-        props.setFilter("middle")
-
+        props.setFilter('middle')
     }
     const setLow = () => {
-        props.setFilter("low")
-
+        props.setFilter('low')
     }
 
     const cnAll = s.button + ' ' + s.all + (props.filter === 'all' ? ' ' + s.active : '')
@@ -41,32 +39,16 @@ function Affairs(props: AffairsPropsType) {
     return (
         <div>
             <div className={s.buttonContainer}>
-                <button
-                    id={'hw2-button-all'}
-                    onClick={setAll}
-                    className={cnAll}
-                >
+                <button id={'hw2-button-all'} onClick={setAll} className={cnAll}>
                     All
                 </button>
-                <button
-                    id={'hw2-button-high'}
-                    onClick={setHigh}
-                    className={cnHigh}
-                >
+                <button id={'hw2-button-high'} onClick={setHigh} className={cnHigh}>
                     High
                 </button>
-                <button
-                    id={'hw2-button-middle'}
-                    onClick={setMiddle}
-                    className={cnMiddle}
-                >
+                <button id={'hw2-button-middle'} onClick={setMiddle} className={cnMiddle}>
                     Middle
                 </button>
-                <button
-                    id={'hw2-button-low'}
-                    onClick={setLow}
-                    className={cnLow}
-                >
+                <button id={'hw2-button-low'} onClick={setLow} className={cnLow}>
                     Low
                 </button>
             </div>

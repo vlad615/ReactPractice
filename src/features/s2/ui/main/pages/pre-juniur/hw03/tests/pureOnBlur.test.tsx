@@ -1,5 +1,5 @@
 import { expect, test, beforeEach } from 'vitest'
-import {pureOnBlur} from '../GreetingContainer'
+import { pureOnBlur } from '../GreetingContainer'
 
 let name: any
 let error: any

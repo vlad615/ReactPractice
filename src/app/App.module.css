@@ -9,8 +9,8 @@
     padding: 25px 0 30px;
 }
 
-.hw::before{
-    content: "";
+.hw::before {
+    content: '';
     position: absolute;
     width: 99vw;
     height: 1px;
@@ -20,8 +20,8 @@
     transform: translateX(-50%);
 }
 
-.hw::after{
-    content: "";
+.hw::after {
+    content: '';
     position: absolute;
     width: 99vw;
     height: 1px;
@@ -32,7 +32,9 @@
 }
 
 .hwTitle {
-    font: 600 22px "Montserrat", sans-serif;
+    font:
+        600 22px 'Montserrat',
+        sans-serif;
     color: #000;
     margin-bottom: 10px;
 }

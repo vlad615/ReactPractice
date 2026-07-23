@@ -1,39 +1,31 @@
-import React, {
-    type ChangeEvent,
-    type DetailedHTMLProps,
-    type InputHTMLAttributes,
-} from 'react'
+import React, { type ChangeEvent, type DetailedHTMLProps, type InputHTMLAttributes } from 'react'
 import s from './SuperCheckbox.module.css'
 
 // тип пропсов обычного инпута
-type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>,
-    HTMLInputElement>
+type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>
 
 type SuperCheckboxPropsType = Omit<DefaultInputPropsType, 'type'> & {
     onChangeChecked?: (checked: boolean) => void
     spanClassName?: string
 }
 
-const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
-    {
-        onChange,
-        onChangeChecked,
-        className,
-        spanClassName,
-        children, // в эту переменную попадёт текст, типизировать не нужно так как он затипизирован в React.FC
-        id,
+const SuperCheckbox: React.FC<SuperCheckboxPropsType> = ({
+    onChange,
+    onChangeChecked,
+    className,
+    spanClassName,
+    children, // в эту переменную попадёт текст, типизировать не нужно так как он затипизирован в React.FC
+    id,
 
-        ...restProps // все остальные пропсы попадут в объект restProps
-    }
-) => {
+    ...restProps // все остальные пропсы попадут в объект restProps
+}) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
         // задачка на написание онченджа
         onChangeChecked?.(e.target.checked)
         onChange?.(e)
     }
 
-    const finalInputClassName = s.checkbox
-        + (className ? ' ' + className : '')
+    const finalInputClassName = s.checkbox + (className ? ' ' + className : '')
 
     return (
         <label className={s.label}>
@@ -45,10 +37,7 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (checked например там внутри)
             />
             {children && (
-                <span
-                    id={id ? id + '-span' : undefined}
-                    className={s.spanClassName}
-                >
+                <span id={id ? id + '-span' : undefined} className={s.spanClassName}>
                     {children}
                 </span>
             )}

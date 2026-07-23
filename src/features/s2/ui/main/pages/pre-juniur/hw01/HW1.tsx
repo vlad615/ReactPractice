@@ -6,12 +6,12 @@ import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
 
 /*
-* 1 - описать тип MessageType
-* 2 - описать тип MessagePropsType в файле Message.tsx
-* 3 - в файле Message.tsx отобразить приходящие данные
-* 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx
-* 5 - сделать стили в соответствии с дизайном
-* */
+ * 1 - описать тип MessageType
+ * 2 - описать тип MessagePropsType в файле Message.tsx
+ * 3 - в файле Message.tsx отобразить приходящие данные
+ * 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx
+ * 5 - сделать стили в соответствии с дизайном
+ * */
 
 type User = {
     avatar: string
@@ -35,7 +35,7 @@ export const message0: MessageType = {
     id: 0,
     user: {
         avatar: avatar, // можно менять
-        name: 'Vitaly',  // можно менять
+        name: 'Vitaly', // можно менять
     },
     message: {
         text: 'some textsome textsome textsome textsome textsome textsome text', // можно менять
@@ -57,7 +57,7 @@ export const friendMessage0: MessageType = {
 export const HW1 = () => {
     return (
         <section>
-            <div id={'hw1'} className='container'>
+            <div id={'hw1'} className="container">
                 <div className={s2.hwTitle}>Homework #1</div>
                 <div className={s2.hw}>
                     {/*проверка отображения (не менять)*/}
@@ -71,7 +71,5 @@ export const HW1 = () => {
                 </div>
             </div>
         </section>
-
     )
 }
-

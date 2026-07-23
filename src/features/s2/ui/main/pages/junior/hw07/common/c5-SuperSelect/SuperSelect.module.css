@@ -1,15 +1,15 @@
 .select {
-    font: 400 14px/1.5 'Montserrat', sans-serif;
+    font:
+        400 14px/1.5 'Montserrat',
+        sans-serif;
     max-width: 165px;
     width: 100%;
-    border: 1px solid #C2C2C2;
+    border: 1px solid #c2c2c2;
     border-radius: 2px;
 }
 
 .select:focus {
-
 }
-
 
 .option:hover {
 }

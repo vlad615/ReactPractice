@@ -29,11 +29,7 @@ const Stand = () => {
                         onChangeText={setValue}
                         error={error}
                         onEnter={() => {
-                            setError(
-                                stateForAllInputs.trim()
-                                    ? ''
-                                    : 'Error'
-                            )
+                            setError(stateForAllInputs.trim() ? '' : 'Error')
                             setValue('')
                         }}
                     />
@@ -42,28 +38,19 @@ const Stand = () => {
 
             <div className={s.buttons}>
                 {/*обычная кнопка:*/}
-                    <SuperButton id={'hw4-super-button-default'}>
-                        default
-                    </SuperButton>
+                <SuperButton id={'hw4-super-button-default'}>default</SuperButton>
                 {/*красная кнопка:*/}
-                    <SuperButton id={'hw4-super-button-red'} xType={'red'}>
-                        red
-                    </SuperButton>
+                <SuperButton id={'hw4-super-button-red'} xType={'red'}>
+                    red
+                </SuperButton>
                 {/*задизэйбленная кнопка:*/}
-                    <SuperButton
-                        id={'hw4-super-button-disabled'}
-                        xType={'red'}
-                        disabled
-                    >
-                        disabled
-                    </SuperButton>
+                <SuperButton id={'hw4-super-button-disabled'} xType={'red'} disabled>
+                    disabled
+                </SuperButton>
                 {/*задизэйбленная кнопка:*/}
-                    <SuperButton
-                        id={'hw4-super-button-secondary'}
-                        className={'secondary'}
-                    >
-                        secondary
-                    </SuperButton>
+                <SuperButton id={'hw4-super-button-secondary'} className={'secondary'}>
+                    secondary
+                </SuperButton>
             </div>
 
             <div className={s.checkboxes}>
@@ -72,8 +59,7 @@ const Stand = () => {
                     <SuperCheckbox
                         id={'hw4-super-checkbox-with-text'}
                         checked={stateForAllCheckboxes}
-                        onChangeChecked={setChecked}
-                    >
+                        onChangeChecked={setChecked}>
                         some text
                     </SuperCheckbox>
                 </div>

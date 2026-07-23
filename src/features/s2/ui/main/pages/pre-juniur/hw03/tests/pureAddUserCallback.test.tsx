@@ -1,5 +1,5 @@
 import { expect, test, beforeEach } from 'vitest'
-import {pureAddUserCallback} from '../HW3'
+import { pureAddUserCallback } from '../HW3'
 
 let initialState: any[]
 const setName = (a: any[]) => {

@@ -5,7 +5,7 @@
 }
 
 .counterWrapper {
-    border: 2px solid #00BCD4;
+    border: 2px solid #00bcd4;
     border-radius: 10px;
     padding: 15px;
     background-color: #0f1927;
@@ -15,11 +15,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #00BCD4;
+    border: 2px solid #00bcd4;
     border-radius: 8px;
     font-weight: 700;
     font-size: 60px;
-    color: #00BCD4;
+    color: #00bcd4;
     margin-bottom: 20px;
     min-height: 150px;
     background-color: #0f1927;
@@ -34,15 +34,15 @@
     padding: 12px 20px;
     font-size: 18px;
     border-radius: 6px;
-    background-color: #00BCD4;
+    background-color: #00bcd4;
     color: #1a1a1a;
     transition: background-color 0.3s;
 }
 
 .btnWrapper button:hover {
-    background-color: #00ACC1;
+    background-color: #00acc1;
 }
 
 .btnWrapper button:active {
-    background-color: #0097A7;
+    background-color: #0097a7;
 }

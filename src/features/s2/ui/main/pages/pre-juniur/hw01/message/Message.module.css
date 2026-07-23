@@ -20,11 +20,13 @@
     padding: 8px 8px;
     border-radius: 8px 8px 0 8px;
     background-color: #06c;
-    box-shadow: 0 1px 2px 0 rgba(29, 33, 38, 0.1), 0 5px 20px 0 rgba(29, 33, 38, 0.03);
+    box-shadow:
+        0 1px 2px 0 rgba(29, 33, 38, 0.1),
+        0 5px 20px 0 rgba(29, 33, 38, 0.03);
 }
 
 .text:after {
-    content: "";
+    content: '';
     position: absolute;
     border-right: 20px solid transparent;
     border-bottom: 12px solid #06c;
@@ -33,18 +35,24 @@
 }
 
 .name {
-    font: 600 18px "Montserrat", sans-serif;
+    font:
+        600 18px 'Montserrat',
+        sans-serif;
     color: #fff;
     margin-bottom: 5px;
 }
 
 .messageText {
-    font: 400 16px "Montserrat", sans-serif;
+    font:
+        400 16px 'Montserrat',
+        sans-serif;
     color: #fff;
 }
 
 .time {
-    font: 600 10px "Montserrat", sans-serif;
+    font:
+        600 10px 'Montserrat',
+        sans-serif;
     color: #000;
     margin: 5px 11px;
 }

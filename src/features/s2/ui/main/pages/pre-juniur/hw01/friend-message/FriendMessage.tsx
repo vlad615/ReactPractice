@@ -5,15 +5,9 @@ import type { MessagePropsType } from '../message/Message'
 // создать тип вместо any и отобразить приходящие данные
 const FriendMessage = (props: MessagePropsType) => {
     return (
-        <div
-            id={'hw1-friend-message-' + props.message.id}
-            className={s.friendMessage}
-        >
+        <div id={'hw1-friend-message-' + props.message.id} className={s.friendMessage}>
             <div className={s.friendImageAndText}>
-                <img
-                    id={'hw1-friend-avatar-' + props.message.id}
-                    src={props.message.user.avatar}
-                />
+                <img id={'hw1-friend-avatar-' + props.message.id} src={props.message.user.avatar} />
                 <div className={s.friendText}>
                     <div id={'hw1-friend-name-' + props.message.id} className={s.friendName}>
                         {props.message.user.name}
