@@ -1,23 +1,43 @@
 .item {
+    font: 300 14px 'Roboto';
+    border-bottom: 1px solid #E5E5E5;
 }
 
 .item:last-of-type {
+    border: unset
 }
 
 .users {
+    width: 100%;
+    border-collapse: collapse;
 }
 
 .buttonsContainer {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .container {
+    max-width: 600px;
+    width: 100%
+
 }
 
 .thead {
+    font: 600 14px 'Roboto';
+    background-color: #E5E5E5;
 }
 
 .nameCol {
+    width: 50%;
+    padding: 10px 15px;
+
 }
 
 .ageCol {
+    font: 500 14px 'Roboto';
+    width: 50%;
+    padding: 10px 15px 10px 0;
 }
