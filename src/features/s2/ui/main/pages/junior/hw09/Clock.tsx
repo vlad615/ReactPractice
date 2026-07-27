@@ -36,7 +36,7 @@ function Clock() {
     // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
     const stringDay = `${date.toLocaleDateString('en-US', { weekday: 'long' })}` || <br /> // пишут студенты
     const stringMonth = `${date.toLocaleDateString('en-US', { month: 'long' })}` || <br /> // пишут студенты
-
+    const btnStyle = { maxWidth: '85px' }
     return (
         <div className={s.clock}>
             <div
@@ -71,6 +71,7 @@ function Clock() {
                     id={'hw9-button-start'}
                     disabled={Boolean(timerId)}
                     onClick={start}
+                    style={btnStyle}
                 >
                     start
                 </SuperButton>
@@ -78,6 +79,7 @@ function Clock() {
                     id={'hw9-button-stop'}
                     disabled={!timerId}
                     onClick={stop}
+                    style={btnStyle}
                 >
                     stop
                 </SuperButton>
