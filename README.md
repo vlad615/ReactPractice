@@ -1,73 +1,89 @@
-# React + TypeScript + Vite
+# Учебный React-проект
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Этот репозиторий представляет собой учебный проект на React + TypeScript + Vite, созданный для закрепления знаний и выполнения домашних заданий уровня Pre-Junior / Junior.
 
-Currently, two official plugins are available:
+## Общая идея
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Проект состоит из нескольких учебных разделов:
 
-## React Compiler
+- `Pre-junior` — первые практические домашки по типизации, работе с данными, компонентам и тестам.
+- `Junior` — более сложные задания с собственными компонентами, управлением состояния, редьюсерами и интерактивными элементами.
+- `Junior Plus` — запасное место для расширения домашек, пока не заполнено.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Кроме учебных страниц, в `App` реализован простой счётчик на Redux Toolkit, чтобы показать работу глобального состояния.
 
-## Expanding the ESLint configuration
+## Технологии
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 19
+- TypeScript
+- React Router DOM (`HashRouter`)
+- Redux Toolkit
+- ESLint + Prettier
 
-```js
-export default defineConfig([
-    globalIgnores(['dist']),
-    {
-        files: ['**/*.{ts,tsx}'],
-        extends: [
-            // Other configs...
+## Быстрый старт
 
-            // Remove tseslint.configs.recommended and replace with this
-            tseslint.configs.recommendedTypeChecked,
-            // Alternatively, use this for stricter rules
-            tseslint.configs.strictTypeChecked,
-            // Optionally, add this for stylistic rules
-            tseslint.configs.stylisticTypeChecked,
+1. Установите зависимости:
 
-            // Other configs...
-        ],
-        languageOptions: {
-            parserOptions: {
-                project: ['./tsconfig.node.json', './tsconfig.app.json'],
-                tsconfigRootDir: import.meta.dirname,
-            },
-            // other options...
-        },
-    },
-])
+```bash
+pnpm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Запустите локальный сервер разработки:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-    globalIgnores(['dist']),
-    {
-        files: ['**/*.{ts,tsx}'],
-        extends: [
-            // Other configs...
-            // Enable lint rules for React
-            reactX.configs['recommended-typescript'],
-            // Enable lint rules for React DOM
-            reactDom.configs.recommended,
-        ],
-        languageOptions: {
-            parserOptions: {
-                project: ['./tsconfig.node.json', './tsconfig.app.json'],
-                tsconfigRootDir: import.meta.dirname,
-            },
-            // other options...
-        },
-    },
-])
+```bash
+pnpm run dev
 ```
+
+3. Откройте приложение в браузере по адресу, который покажет Vite.
+
+## Скрипты
+
+- `pnpm run dev` — запуск приложения в режиме разработки
+- `pnpm run test` — запуск тестов Vitest
+
+## Структура проекта
+
+- `src/main.tsx` — входной файл, который монтирует React, подключает Redux Provider.
+- `src/app/App.tsx` — главный компонент приложения.
+- `src/app/store.ts` — Redux store, подключается редьюсер `counter`.
+- `src/commun/` — общие компоненты, хуки и утилиты.
+    - `components/` — переиспользуемые UI-компоненты.
+    - `hooks/` — кастомные хуки `useAppDispatch` и `useAppSelector`.
+    - `localStorage/` — утилиты `saveState` / `restoreState`.
+- `src/features/` — функциональные фичи и учебные страницы.
+    - `counter/` — простой редьюсер и компонент счётчика.
+    - `s2/ui/main/` — учебная часть с роутингом, страницами и домашками.
+
+## Архитектура учебной части
+
+В `src/features/s2/ui/main/` расположены основные учебные компоненты:
+
+- `Main.tsx` — оболочка с `HashRouter` и `Layout`.
+- `Pages.tsx` — объявление маршрутов.
+- `sidebar/Sidebar.tsx` — меню навигации между разделами.
+- `header/Header.tsx` — заголовок страницы.
+
+Маршруты:
+
+- `/pre-junior` — страница `PreJunior`
+- `/junior` — страница `Junior`
+- `/junior-plus` — страница `JuniorPlus`
+- `/error404` — страница ошибки
+
+### Утилиты
+
+- `src/commun/localStorage/localStorage.ts` — функции `saveState` и `restoreState` для сохранения данных в браузере.
+
+### Хуки
+
+- `src/commun/hooks/useAppDispatch.ts` — типизированный `useDispatch`.
+- `src/commun/hooks/useAppSelector.ts` — типизированный `useSelector`.
+
+## Redux-счётчик
+
+Файл: `src/features/counter/ui/Counter/Counter.tsx`
+
+- простой локальный счетчик с добавлением +1, +3 и сбросом.
+- ограничение максимального значения `<= 15`.
+- редьюсер `src/features/counter/model/counter-reducer.ts`.
+- селектор `src/features/counter/model/counter-selector.ts`.
