@@ -12,7 +12,6 @@ function Clock() {
 
     const start = () => {
         const id = setInterval(() => {
-            console.log('tik');
             setDate(new Date())
         }, 1000)
         setTimerId(id)
