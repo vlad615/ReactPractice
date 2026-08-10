@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import s from './HW11.module.css'
 import s2 from '@/app/App.module.css'
 import { restoreState } from '@/commun/localStorage/localStorage'
+import { useState } from 'react'
 import SuperRange from './common/c7-SuperRange/SuperRange'
+import s from './HW11.module.css'
 
 /*
 * 1 - передать значения в оба слайдера
@@ -16,7 +16,7 @@ function HW11() {
     const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 0))
     const [value2, setValue2] = useState(restoreState<number>('hw11-value2', 100))
 
-    const change = (event: Event, value: unknown) => {
+    const change = (_event: Event, value: unknown) => {
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
         if (Array.isArray(value)) {
             if (value[1] - value[0] >= minDistance) {

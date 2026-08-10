@@ -1,11 +1,10 @@
-import React from 'react'
-import { type RootState } from '@/app/store'
-import { loadingAC } from './bll/loadingReducer'
-import SuperButton from '@/commun/components/c2-SuperButton/SuperButton'
 import s2 from '@/app/App.module.css'
-import { Loader } from './Loader'
-import { useAppSelector } from '@/commun/hooks/useAppSelector'
+import { type RootState } from '@/app/store'
+import SuperButton from '@/commun/components/c2-SuperButton/SuperButton'
 import { useAppDispatch } from '@/commun/hooks/useAppDispatch'
+import { useAppSelector } from '@/commun/hooks/useAppSelector'
+import { loadingAC } from './bll/loadingReducer'
+import { Loader } from './Loader'
 
 /*
 * 1 - в файле loadingReducer.ts дописать типы и логику
