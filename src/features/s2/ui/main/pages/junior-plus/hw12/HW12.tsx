@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
-import s from './HW12.module.css'
 import s2 from '@/app/App.module.css'
 import SuperSelect from '@/commun/components/c5-SuperSelect/SuperSelect'
-import { changeThemeIdAC } from './bll/themeReducer'
 import { useAppDispatch, useAppSelector } from '@/commun/hooks/'
+import { useEffect } from 'react'
+import { changeThemeIdAC } from './bll/themeReducer'
+import s from './HW12.module.css'
 /*
 * 1 - в файле themeReducer.ts написать нужные типы вместо any, дописать редьюсер
 * 2 - получить themeId из редакса
@@ -23,7 +23,7 @@ const HW12 = () => {
     const dispatch = useAppDispatch()
 
     const change = (id: number) => { // дописать функцию
-        dispatch(changeThemeIdAC(id))
+        dispatch(changeThemeIdAC(+id))
     }
 
     useEffect(() => {
