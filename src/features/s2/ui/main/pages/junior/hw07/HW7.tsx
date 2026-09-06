@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import s2 from '@/app/App.module.css'
-import SuperSelect from './common/c5-SuperSelect/SuperSelect'
+import SuperSelect from '@/commun/components/c5-SuperSelect/SuperSelect'
 import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 import s from './HW7.module.css'
 
