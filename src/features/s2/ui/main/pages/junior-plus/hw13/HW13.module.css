@@ -1,0 +1,40 @@
+.buttonsContainer {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.responseContainer {
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imageContainer {
+    max-width: 450px;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.textContainer{
+    width: 100%;
+    max-width: 510px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.code {
+    font-size: 30px;
+}
+
+.text {
+}
+.info {
+    justify-self: start;
+align-self: start;
+}
