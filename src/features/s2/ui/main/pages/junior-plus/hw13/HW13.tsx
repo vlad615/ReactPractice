@@ -81,6 +81,7 @@ const HW13 = () => {
                             id={'hw13-send-true'}
                             onClick={send(true)}
                             className={'secondary'}
+                            disabled={info === '...loading'}
                         // дописать
 
                         >
@@ -90,6 +91,7 @@ const HW13 = () => {
                             id={'hw13-send-false'}
                             onClick={send(false)}
                             className={'secondary'}
+                            disabled={info === '...loading'}
                         // дописать
 
                         >
@@ -99,6 +101,7 @@ const HW13 = () => {
                             id={'hw13-send-undefined'}
                             onClick={send(undefined)}
                             className={'secondary'}
+                            disabled={info === '...loading'}
                         // дописать
 
                         >
@@ -108,6 +111,7 @@ const HW13 = () => {
                             id={'hw13-send-null'}
                             onClick={send(null)} // имитация запроса на не корректный адрес
                             className={'secondary'}
+                            disabled={info === '...loading'}
                         // дописать
 
                         >

@@ -29,12 +29,15 @@
 }
 
 .button:hover {
+    
 }
 
 .red:hover {
 }
 
 .secondary:hover {
+    color: #fff;
+    background: #06c;
 }
 
 .default:active {
@@ -44,8 +47,7 @@
 }
 
 .secondary:active {
-    color: #fff;
-    background: #06c;
+    
 }
 
 .red:active {
@@ -53,5 +55,12 @@
     color: #cc1439;
 }
 
+.button:disabled:hover{
+    color: #06c;
+    background: #fff;
+}
+
 .button:disabled {
+    cursor:auto;
+
 }
