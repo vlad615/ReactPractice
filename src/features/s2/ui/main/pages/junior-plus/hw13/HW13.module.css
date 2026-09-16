@@ -22,6 +22,9 @@
 }
 
 .textContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     width: 100%;
     max-width: 510px;
     font-weight: 500;
