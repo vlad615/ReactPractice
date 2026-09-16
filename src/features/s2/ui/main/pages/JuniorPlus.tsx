@@ -2,7 +2,7 @@ import HW10 from './junior-plus/hw10/HW10'
 import HW11 from './junior-plus/hw11/HW11'
 import HW12 from './junior-plus/hw12/HW12'
 import HW13 from './junior-plus/hw13/HW13'
-// import HW14 from './junior-plus/hw14/HW14'
+import HW14 from './junior-plus/hw14/HW14'
 // import HW15 from './junior-plus/hw15/HW15'
 
 function JuniorPlus() {
@@ -12,7 +12,7 @@ function JuniorPlus() {
             <HW11 />
             <HW12 />
             <HW13 />
-            {/* <HW14 /> */}
+            <HW14 />
             {/* <HW15 /> */}
         </div>
     )
