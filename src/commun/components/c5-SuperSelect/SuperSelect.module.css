@@ -2,7 +2,7 @@
     font:
         400 14px/1.5 'Montserrat',
         sans-serif;
-    max-width: 165px;
+    max-width: max-content;
     width: 100%;
     border: 1px solid #c2c2c2;
     border-radius: 2px;

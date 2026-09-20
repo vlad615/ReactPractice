@@ -34,11 +34,19 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = ({
         <div className={s.pagination}>
             <Pagination
                 id={id + '-pagination'}
-                sx={
-                    {
-                        // стили для Pagination // пишет студент
-                    }
-                }
+                sx={{
+                    paddingRight: '25px',
+                    gap: '10px',
+                    '& .MuiPagination-ul li': {
+                        marginRight: '10px',
+                    },
+                    '& .MuiPagination-ul li:last-child': {
+                        marginRight: 0,
+                    },
+                }}
+                size="small"
+                shape="rounded"
+                color={'primary'}
                 page={page}
                 count={lastPage}
                 onChange={onChangeCallback}

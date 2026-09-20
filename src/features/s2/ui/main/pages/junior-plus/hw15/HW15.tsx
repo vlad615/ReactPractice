@@ -5,6 +5,7 @@ import { useSearchParams } from 'react-router-dom'
 import SuperSort from './common/c10-SuperSort/SuperSort'
 import SuperPagination from './common/c9-SuperPagination/SuperPagination'
 import s from './HW15.module.css'
+import loading from './common/accets/Loading.svg'
 
 /*
  * 1 - дописать SuperPagination
@@ -104,7 +105,7 @@ const HW15 = () => {
                 <div className={s2.hw}>
                     {idLoading && (
                         <div id={'hw15-loading'} className={s.loading}>
-                            Loading...
+                            <img src={loading} alt="loading" />
                         </div>
                     )}
 
