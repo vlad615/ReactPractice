@@ -2,10 +2,10 @@ import s2 from '@/app/App.module.css'
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
+import loading from './common/accets/Loading.svg'
 import SuperSort from './common/c10-SuperSort/SuperSort'
 import SuperPagination from './common/c9-SuperPagination/SuperPagination'
 import s from './HW15.module.css'
-import loading from './common/accets/Loading.svg'
 
 /*
  * 1 - дописать SuperPagination
